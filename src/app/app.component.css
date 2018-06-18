@@ -1,3 +1,15 @@
 .container {
   margin-top: 30px;
 }
+
+input.ng-pending{
+  border: 2px solid yellow;
+}
+
+input.ng-invalid.ng-touched{
+  border: 2px solid red;
+}
+
+input.ng-valid{
+  border: 2px solid limegreen;
+}
