@@ -33,6 +33,15 @@ export class AppComponent implements OnInit {
           console.log('Status changes: ', value);
         }
       );
+    this.signupForm.setValue({
+      'userData': {
+        'username': 'Lilia',
+        'emailAdress': 'test@test.com'
+      },
+      'gender': 'female',
+      'hobbies': []
+    });
+    this.signupForm.patchValue({'gender': 'male'});
   }
 
   onSubmit() {
